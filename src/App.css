@@ -10,7 +10,7 @@
   --primary-orange:#f9ab00;
 }
 body{
-  font-family: "Roboto Condesed" sans-serifs;
+  font-family: "Roboto Condensed" ,sans-serifs !important;
 }
 /********NavBar*****/
 nav{
@@ -49,12 +49,12 @@ margin-left: 0.75rem;
 }
 .navbar-nav > li > a.active, .navbar-nav > li > a.active:focus
 {
-  border-bottom: 0.1875rem solid var(--primary-white);
+  border-bottom: 0.1875rem solid var(--primary-hover-orange);
  
 }
 .navbar-nav > li > a:hover 
 {
-  border-bottom: 0.1875rem solid var(--primary-white);
+  border-bottom: 0.1875rem solid var(--primary-hover-orange);
 
   
 }
@@ -139,10 +139,31 @@ button:focus {
   z-index:1;
 
 }
-@media(max-width : 768px)
+/********About me*****/
+.photo-wrap
 {
-  .particle-canvas
-  {
-    display:none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile-img
+{
+  width: 19rem;
+  border-radius: 50%;
+  padding: 0.3rem;
+  border: 1px solid var(--primary-orange);
+}
+.about-heading
+{
+  color: var(--primary-orange);
+  text-transform: uppercase;
+  padding: 15px;
+}
+@media(max-width:468px)
+
+{
+  .profile-img{
+    width: 10rem;
   }
+  
 }
